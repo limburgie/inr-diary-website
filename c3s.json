@@ -3,7 +3,7 @@
 
 	"contentRepositoryConnection": {
 		"type": "PRISMIC",
-		"repositoryId": "https://inrdiary.prismic.io/api"
+		"repositoryId": "https://inrdiary.cdn.prismic.io/api"
 	},
 
 	"errorPage": {
