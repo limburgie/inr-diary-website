@@ -6,6 +6,11 @@
 		"repositoryId": "https://inrdiary.cdn.prismic.io/api"
 	},
 
+	"locationSettings": {
+		"locale": "nl_BE",
+		"timeZone": "Europe/Brussels"
+	},
+
 	"errorPage": {
 		"name": "Error",
 		"contents": "pages/error.ftl"

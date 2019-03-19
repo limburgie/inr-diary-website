@@ -16,16 +16,16 @@
 	<meta name="description" content="INR Diary">
 	<meta name="author" content="Peter Mesotten">
 	<link rel="shortcut icon" type="image/png" href="../assets/images/logo/logo.png">
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../assets/plugins/font-awesome/css/fontawesome-all.min.css">
-	<link rel="stylesheet" href="../assets/plugins/flexslider/flexslider.css">
-	<link rel="stylesheet" href="../assets/plugins/animate-css/animate.min.css">
-	<link id="theme-style" rel="stylesheet" href="../assets/css/styles.css">
+	<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel='stylesheet' type='text/css'>
+	<link href="//fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/plugins/font-awesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="/assets/plugins/flexslider/flexslider.css">
+	<link rel="stylesheet" href="/assets/plugins/animate-css/animate.min.css">
+	<link id="theme-style" rel="stylesheet" href="/assets/css/styles.css">
 	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
 
@@ -150,7 +150,7 @@
 								<#if member.getText("github_account")?has_content>
 									<li><a href="https://github.com/${member.getText("github_account")}" target="_blank"><i class="fab fa-github"></i></a></li>
 								</#if>
-								<li class="row-end"><a href="mailto:${member.getText("email_address")}"><i class="fa fa-envelope"></i></a></li>
+								<li class="row-end"><a href="mailto:${member.getText("email_address")}" target="_blank"><i class="fa fa-envelope"></i></a></li>
 							</ul>
 						</div>
 					</#list>
@@ -194,13 +194,13 @@
 			<div class="intro col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
 				<p>We’d love to hear from you. Please let us know if you have any questions or feedback.</p>
 				<ul class="list-unstyled contact-details">
-					<li><i class="fa fa-envelope"></i><a href="mailto:peter@inrdiary.com">peter@inrdiary.com</a></li>
+					<li><i class="fa fa-envelope"></i><a href="mailto:peter@inrdiary.com" target="_blank">peter@inrdiary.com</a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="row text-center">
 			<div class="contact-form col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
-				<form class="form" action="mailto:peter@inrdiary.com">
+				<form class="form" action="mailto:peter@inrdiary.com" target="_top">
 					<div class="form-group message">
 						<label class="sr-only" for="message">Message</label>
 						<textarea id="message" name="body" class="form-control" rows="6" placeholder="Message:"></textarea>
@@ -226,19 +226,19 @@
 	</div>
 </footer>
 
-<script type="text/javascript" src="../assets/plugins/jquery-1.12.3.min.js"></script>
-<script type="text/javascript" src="../assets/plugins/isMobile/isMobile.min.js"></script>
-<script type="text/javascript" src="../assets/plugins/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../assets/plugins/jquery-inview/jquery.inview.min.js"></script>
-<script type="text/javascript" src="../assets/plugins/FitVids/jquery.fitvids.js"></script>
-<script type="text/javascript" src="../assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
-<script type="text/javascript" src="../assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
-<script type="text/javascript" src="../assets/plugins/flexslider/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="../assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
-<script type="text/javascript" src="../assets/js/main.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/isMobile/isMobile.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery-inview/jquery.inview.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/FitVids/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+<script type="text/javascript" src="/assets/js/main.js"></script>
 <!--[if !IE]>-->
-<script type="text/javascript" src="../assets/js/animations.js"></script>
+<script type="text/javascript" src="/assets/js/animations.js"></script>
 <!--<![endif]-->
 
 </body>
