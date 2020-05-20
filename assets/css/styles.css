@@ -545,7 +545,7 @@ select {
 .promo .android .android-holder {
   position: relative;
   width: 320px;
-  height: 600px;
+  height: 750px;
   background-image: url('../images/android/android-black.png');
   background-repeat: no-repeat;
   background-position: center top;
@@ -555,7 +555,7 @@ select {
   width: 254px;
   height: 450px;
   left: 35px;
-  top: 72px;
+  top: 71px;
 }
 .promo .android .flexslider .flex-control-nav {
   bottom: -50px;
@@ -1486,12 +1486,6 @@ select {
     margin: 0 auto;
     width: auto;
   }
-  .promo .ipad {
-    text-align: center;
-  }
-  .promo .ipad .ipad-holder {
-    margin: 0 auto;
-  }
   .promo .iphone .iphone-holder {
     width: 260px;
     height: 488px;
@@ -1520,29 +1514,12 @@ select {
     margin-bottom: 30px;
   }
   .promo .android .android-holder-inner {
-    width: 207px;
+    width: 124px;
     height: auto;
-    left: 28px;
-    top: 58px;
+    left: 69px;
+    top: 34px;
   }
   .promo .android .flexslider .flex-control-nav {
-    bottom: -33px;
-  }
-  .promo .ipad .ipad-holder {
-    width: 260px;
-    height: 420px;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-  }
-  .promo .ipad .ipad-holder-inner {
-    width: 199px;
-    height: auto;
-    left: 31px;
-    top: 50px;
-  }
-  .promo .ipad .flexslider .flex-control-nav {
     bottom: -33px;
   }
   .promo .overview .note .left-arrow {
@@ -1557,60 +1534,8 @@ select {
     -o-background-size: 30px auto;
     background-size: 30px auto;
   }
-  .promo-landscape .iphone .iphone-holder {
-    width: 260px;
-    height: 125px;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-  }
-  .promo-landscape .iphone .iphone-holder-inner {
-    width: 180px;
-    height: 394px;
-    left: 41px;
-    top: 10px;
-  }
-  .promo-landscape .iphone:before {
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-  }
-  .promo-landscape .android .android-holder {
-    width: 260px;
-    height: 132px;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-  }
-  .promo-landscape .android .android-holder-inner {
-    width: 207px;
-    height: 117px;
-    left: 29px;
-    top: 6px;
-  }
-  .promo-landscape .android .flexslider .flex-control-nav {
-    bottom: -45px;
-  }
-  .promo-landscape .android:before {
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-  }
   .promo .overview .btn-group li {
     display: block;
-  }
-  .promo-landscape .overview .btn-group li a {
-    margin-right: 0;
-  }
-  .promo-landscape .overview .summary {
-    margin-left: auto;
-  }
-  .promo-landscape .overview .summary li {
-    text-align: center;
   }
 }
 /* Small devices (tablets, 768px and up) */
@@ -1653,6 +1578,7 @@ select {
 @media (min-width: 992px) {
   .promo .overview {
     text-align: left;
+    margin-top: 150px;
   }
   .promo .overview .summary {
     margin-left: 0;

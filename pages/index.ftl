@@ -9,13 +9,13 @@
 <html lang="en">
 <!--<![endif]-->
 <head>
-	<title>INR Diary</title>
+	<title>INR Diary Plus</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="INR Diary">
 	<meta name="author" content="Peter Mesotten">
-	<link rel="shortcut icon" type="image/png" href="../assets/images/logo/logo.png">
+	<link rel="shortcut icon" type="image/png" href="../assets/images/logo/logo-50.png">
 	<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel='stylesheet' type='text/css'>
 	<link href="//fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
@@ -34,9 +34,9 @@
 <header id="top" class="header navbar-fixed-top">
 	<div class="container">
 		<h1 class="logo pull-left">
-			<a class="scrollto" href="template.ftl#promo">
-				<img id="logo-image" class="logo-image" src="../assets/images/logo/logo.png" alt="Logo">
-				<span class="logo-title">INR Diary</span>
+			<a class="scrollto" href="#promo">
+				<img id="logo-image" class="logo-image" src="../assets/images/logo/logo-50.png" alt="Logo">
+				<span class="logo-title">INR Diary Plus</span>
 			</a>
 		</h1>
 		<nav id="main-nav" class="main-nav navbar-right" role="navigation">
@@ -75,7 +75,7 @@
 				<div class="download-area">
 					<ul class="btn-group list-inline">
 						<li class="android-btn">
-							<a href="https://play.google.com/store/apps/details?id=be.webfactor.inrdiary" target="_blank">
+							<a href="https://play.google.com/store/apps/details?id=be.webfactor.inrdiaryplus" target="_blank">
 								Get it from Google Play
 							</a>
 						</li>
@@ -150,7 +150,9 @@
 								<#if member.getText("github_account")?has_content>
 									<li><a href="https://github.com/${member.getText("github_account")}" target="_blank"><i class="fab fa-github"></i></a></li>
 								</#if>
-								<li class="row-end"><a href="mailto:${member.getText("email_address")}" target="_blank"><i class="fa fa-envelope"></i></a></li>
+								<#if member.getText("email_address")?has_content>
+									<li class="row-end"><a href="mailto:${member.getText("email_address")}" target="_blank"><i class="fa fa-envelope"></i></a></li>
+								</#if>
 							</ul>
 						</div>
 					</#list>
@@ -194,13 +196,13 @@
 			<div class="intro col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
 				<p>We’d love to hear from you. Please let us know if you have any questions or feedback.</p>
 				<ul class="list-unstyled contact-details">
-					<li><i class="fa fa-envelope"></i><a href="mailto:peter@inrdiary.com" target="_blank">peter@inrdiary.com</a></li>
+					<li><i class="fa fa-envelope"></i><a href="mailto:peter@web-factor.be" target="_blank">peter@web-factor.be</a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="row text-center">
 			<div class="contact-form col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
-				<form class="form" action="mailto:peter@inrdiary.com" target="_top">
+				<form class="form" action="mailto:peter@web-factor.be" target="_top">
 					<div class="form-group message">
 						<label class="sr-only" for="message">Message</label>
 						<textarea id="message" name="body" class="form-control" rows="6" placeholder="Message:"></textarea>
@@ -211,18 +213,12 @@
 				</form>
 			</div>
 		</div>
-		<div class="text-center">
-			<ul class="social-icons list-inline">
-				<li><a href="https://www.twitter.com/inrdiary" target="_blank"><i class="fab fa-twitter"></i></a></li>
-				<li><a href="https://www.facebook.com/inrdiary" target="_blank"><i class="fab fa-facebook"></i></a></li>
-			</ul>
-		</div>
 	</div>
 </section>
 
 <footer class="footer">
 	<div class="container">
-		<small class="copyright pull-left">Copyright &copy; ${.now?string('yyyy')} INR Diary</small>
+		<small class="copyright pull-left">&copy; ${.now?string('yyyy')} <a href="https://www.web-factor.be" target="_blank">Web Factor</a></small>
 	</div>
 </footer>
 
