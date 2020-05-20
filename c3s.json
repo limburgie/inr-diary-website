@@ -11,16 +11,37 @@
 		"timeZone": "Europe/Brussels"
 	},
 
+	"templates": [
+		{
+			"name": "main",
+			"contents": "templates/main.ftl"
+		}
+	],
+
 	"errorPage": {
 		"name": "Error",
-		"contents": "pages/error.ftl"
+		"template": "main",
+		"inserts": {
+			"body": "pages/error.ftl"
+		}
 	},
 
 	"pages": [
 		{
-			"friendlyUrl": "index",
-			"name": "INR Diary",
-			"contents": "pages/index.ftl"
+			"friendlyUrl": "home",
+			"name": "Home",
+			"template": "main",
+			"inserts": {
+				"body": "pages/home.ftl"
+			}
+		},
+		{
+			"friendlyUrl": "privacy",
+			"name": "Privacy",
+			"template": "main",
+			"inserts": {
+				"body": "pages/privacy.ftl"
+			}
 		}
 	]
 }

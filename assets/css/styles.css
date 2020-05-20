@@ -398,6 +398,11 @@ select {
   position: relative;
 }
 /* ======= Promo Section ======= */
+#privacy {
+  margin-top: 80px;
+  padding: 50px !important;
+}
+
 .promo {
   background-color: #56bc94;
   color: #fff;
