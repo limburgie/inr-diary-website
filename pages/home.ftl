@@ -16,22 +16,23 @@
 								Get it from Google Play
 							</a>
 						</li>
+						<li class="ios-btn">
+							<a href="#" target="_blank">
+								Get it from App Store
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 
 			<#assign screenshotList = api.query("screenshot_overview").findOne()>
-			<div class="phone android android-black col-md-4 col-sm-12 col-xs-12 ">
-				<div class="android-holder phone-holder">
-					<div class="android-holder-inner">
-						<div class="slider flexslider">
-							<ul class="slides">
-								<#list screenshotList.getGroup("screenshots") as screenshot>
-									<li><img src="${screenshot.getImage("screenshot").url}" alt="${screenshot.getImage("screenshot").alt}"/></li>
-								</#list>
-							</ul>
-						</div>
-					</div>
+			<div class="col-md-4 col-sm-12 col-xs-12 screenshot">
+				<div class="slider flexslider">
+					<ul class="slides">
+						<#list screenshotList.getGroup("screenshots") as screenshot>
+							<li><img src="${screenshot.getImage("screenshot").url}" alt="${screenshot.getImage("screenshot").alt}"/></li>
+						</#list>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -122,33 +123,6 @@
 					</div>
 				</div>
 			</#list>
-		</div>
-	</div>
-</section>
-
-<section id="contact" class="contact section has-pattern">
-	<div class="container">
-		<div class="row text-center">
-			<h2 class="title">Contact us</h2>
-			<div class="intro col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
-				<p>We’d love to hear from you. Please let us know if you have any questions or feedback.</p>
-				<ul class="list-unstyled contact-details">
-					<li><i class="fa fa-envelope"></i><a href="mailto:peter@web-factor.be" target="_blank">peter@web-factor.be</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="row text-center">
-			<div class="contact-form col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
-				<form class="form" action="mailto:peter@web-factor.be" target="_top">
-					<div class="form-group message">
-						<label class="sr-only" for="message">Message</label>
-						<textarea id="message" name="body" class="form-control" rows="6" placeholder="Message:"></textarea>
-					</div>
-					<input type="hidden" name="subject" value="INR Diary feedback"/>
-					<input type="hidden" name="su" value="INR Diary feedback"/>
-					<button type="submit" class="btn btn-lg btn-theme">Send Message</button>
-				</form>
-			</div>
 		</div>
 	</div>
 </section>

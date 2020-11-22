@@ -25,7 +25,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="INR Diary">
 	<meta name="author" content="Peter Mesotten">
-	<link rel="shortcut icon" type="image/png" href="../assets/images/logo/logo-50.png">
+	<link rel="shortcut icon" type="image/png" href="../assets/images/logo/icon-transparent-50.png">
 	<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel='stylesheet' type='text/css'>
 	<link href="//fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
@@ -45,8 +45,8 @@
 	<div class="container">
 		<h1 class="logo pull-left">
 			<a class="scrollto" href="#promo">
-				<img id="logo-image" class="logo-image" src="../assets/images/logo/logo-50.png" alt="Logo">
-				<span class="logo-title">INR Diary Plus</span>
+				<img id="logo-image" class="logo-image" src="../assets/images/logo/inr-diary-drop-100.png" alt="Logo">
+				<span class="logo-title">INR Diary</span>
 			</a>
 		</h1>
 		<nav id="main-nav" class="main-nav navbar-right" role="navigation">
