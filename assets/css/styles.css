@@ -421,11 +421,11 @@ select {
 /* ======= Promo Section ======= */
 #privacy {
   margin-top: 80px;
-  padding: 50px !important;
+  padding: 50px;
 }
 
 #privacy .content {
-  padding: 100px;
+  padding: 20px;
 }
 
 .promo {
@@ -1482,6 +1482,10 @@ select {
 }
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
+  #privacy {
+    padding: 20px !important;
+  }
+
   .navbar-toggle {
     margin-right: 0;
   }
