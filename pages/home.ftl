@@ -19,18 +19,6 @@
 								</a>
 							</li>
 						</#list>
-						<!--
-						<li class="android-btn">
-							<a href="https://play.google.com/store/apps/details?id=be.webfactor.inrdiaryplus" target="_blank">
-								Get it from Google Play
-							</a>
-						</li>
-						<li class="ios-btn">
-							<a href="#" target="_blank">
-								Get it from App Store
-							</a>
-						</li>
-						-->
 					</ul>
 				</div>
 			</div>
@@ -110,8 +98,47 @@
 	</div>
 </section>
 
-<#assign testimonials = api.query("testimonial").findRandom(12)>
+<#assign faqs = api.query("faq").orderByAsc("priority").findAll()>
+<section id="faq" class="faq section">
+	<div class="container">
+		<h2 class="title">Frequently asked questions</h2>
+		<div class="row">
+			<#list faqs?chunk((faqs?size / 2)?ceiling) as faqList>
+				<div class="faq-col col-md-6 col-12">
+					<#list faqList as faq>
+						<div class="item">
+							<h3 id="${faq.uid}" class="faq-anchor">Testje</h3>
+							<h3 class="question">
+								<a href="#${faq.uid}">
+									<i class="fa fa-question-circle"/> ${faq.getText("question")}
+								</a>
+							</h3>
+							<div class="answer">${faq.getRichText("answer").html}</div>
+						</div>
+					</#list>
+				</div>
+			</#list>
+		</div>
+		<div class="more text-center">
+			<h4 class="title">More questions?</h4>
+			<a class="btn btn-lg btn-theme scrollto" href="#contact">Get in touch <i class="fa fa-arrow-alt-circle-down"></i></a>
+		</div>
+	</div><!--//container-->
+</section>
 
+<section id="privacy" class="story section has-pattern">
+	<div class="container">
+		<div class="row">
+			<#assign privacy = api.query("privacy").findOne()>
+			<div class="content text-center">
+				<h2 class="title">${privacy.getText("title")}</h2>
+				${privacy.getRichText("description").html}
+			</div>
+		</div>
+	</div>
+</section>
+
+<#assign testimonials = api.query("testimonial").findRandom(12)>
 <section id="testimonials" class="testimonials section">
 	<div class="container">
 		<div class="row">

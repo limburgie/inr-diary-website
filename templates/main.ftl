@@ -44,7 +44,7 @@
 <header id="top" class="header navbar-fixed-top">
 	<div class="container">
 		<h1 class="logo pull-left">
-			<a href="/">
+			<a class="scrollto" href="#promo">
 				<img id="logo-image" class="logo-image" src="../assets/images/logo/inr-diary-drop-100.png" alt="Logo">
 				<span class="logo-title">INR Diary</span>
 			</a>
@@ -60,12 +60,13 @@
 			</div>
 			<div class="navbar-collapse collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li class="active nav-item sr-only"><a class="${(request.page.name == 'Home')?then('scrollto','')}" href="/#promo">Home</a></li>
-					<li class="nav-item"><a class="${(request.page.name == 'Home')?then('scrollto','')}" href="/#features">Features</a></li>
-					<li class="nav-item"><a class="${(request.page.name == 'Home')?then('scrollto','')}" href="/#story">Story</a></li>
-					<li class="nav-item"><a class="${(request.page.name == 'Home')?then('scrollto','')}" href="/#testimonials">Testimonials</a></li>
-					<li class="nav-item"><a class="${(request.page.name == 'Home')?then('scrollto','')}" href="#contact">Contact</a></li>
-					<li class="nav-item last"><a href="/privacy">Privacy</a></li>
+					<li class="active nav-item sr-only"><a class="scrollto" href="/#promo">Home</a></li>
+					<li class="nav-item"><a class="scrollto" href="/#features">Features</a></li>
+					<li class="nav-item"><a class="scrollto" href="/#story">Story</a></li>
+					<li class="nav-item"><a class="scrollto" href="/#faq">FAQ</a></li>
+					<li class="nav-item"><a class="scrollto" href="/#privacy">Privacy</a></li>
+					<li class="nav-item"><a class="scrollto" href="/#testimonials">Testimonials</a></li>
+					<li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
