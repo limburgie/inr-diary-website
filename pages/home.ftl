@@ -9,8 +9,17 @@
 						<li>${highlight.getText("highlight")}</li>
 					</#list>
 				</ul>
+				<#assign downloadButtons = api.query("download_buttons").findOne()>
 				<div class="download-area">
 					<ul class="btn-group list-inline">
+						<#list downloadButtons.getGroup("buttons") as button>
+							<li>
+								<a href="${button.getText("app_store_url")}" style="background: url('${button.getImage("app_store_image").url}?w=160')" target="_blank">
+									${button.getImage("app_store_image").alt}
+								</a>
+							</li>
+						</#list>
+						<!--
 						<li class="android-btn">
 							<a href="https://play.google.com/store/apps/details?id=be.webfactor.inrdiaryplus" target="_blank">
 								Get it from Google Play
@@ -21,6 +30,7 @@
 								Get it from App Store
 							</a>
 						</li>
+						-->
 					</ul>
 				</div>
 			</div>

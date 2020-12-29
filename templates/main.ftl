@@ -44,7 +44,7 @@
 <header id="top" class="header navbar-fixed-top">
 	<div class="container">
 		<h1 class="logo pull-left">
-			<a class="scrollto" href="#promo">
+			<a href="/">
 				<img id="logo-image" class="logo-image" src="../assets/images/logo/inr-diary-drop-100.png" alt="Logo">
 				<span class="logo-title">INR Diary</span>
 			</a>
