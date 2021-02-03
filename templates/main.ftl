@@ -19,7 +19,7 @@
 		gtag('config', 'UA-164602052-3');
 	</script>
 
-	<title>INR Diary | ${request.page.name}</title>
+	<title>INR Diary</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,9 +63,9 @@
 					<li class="active nav-item sr-only"><a class="scrollto" href="/#promo">Home</a></li>
 					<li class="nav-item"><a class="scrollto" href="/#features">Features</a></li>
 					<li class="nav-item"><a class="scrollto" href="/#story">Story</a></li>
-					<li class="nav-item"><a class="scrollto" href="/#faq">FAQ</a></li>
-					<li class="nav-item"><a class="scrollto" href="/#privacy">Privacy</a></li>
 					<li class="nav-item"><a class="scrollto" href="/#testimonials">Testimonials</a></li>
+					<li class="nav-item"><a class="scrollto" href="/#privacy">Privacy</a></li>
+					<li class="nav-item"><a class="scrollto" href="/#faq">FAQ</a></li>
 					<li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
 				</ul>
 			</div>

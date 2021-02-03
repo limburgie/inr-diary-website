@@ -103,6 +103,46 @@
 	</div>
 </section>
 
+<#assign testimonials = api.query("testimonial").findRandom(12)>
+<section id="testimonials" class="testimonials section">
+	<div class="container">
+		<div class="row">
+			<h2 class="title text-center">What do people think?</h2>
+			<#list testimonials as testimonial>
+				<div class="item col-md-4 col-sm-4">
+					<div class="quote-box">
+						<i class="fa fa-quote-left"></i>
+						<blockquote class="quote">
+							${testimonial.getText("testimonial")}
+						</blockquote>
+					</div>
+					<div class="people row">
+						<img class="img-circle user-pic col-md-5 col-sm-5 col-xs-12 col-md-offset-1 col-sm-offset-1" src="${testimonial.getImage("picture").url}"/>
+						<p class="details pull-left">
+							<span class="name">${testimonial.getText("name")}</span>
+							<span class="title">${testimonial.getText("country")}</span>
+						</p>
+					</div>
+				</div>
+			</#list>
+		</div>
+	</div>
+</section>
+
+<section id="privacy" class="story section has-pattern">
+	<div class="container">
+		<div class="row">
+			<#assign privacy = api.query("privacy").findOne()>
+			<div class="content col-md-12 text-center">
+				<div class="policy">
+					<h2 class="title">${privacy.getText("title")}</h2>
+					${privacy.getRichText("description").html}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <#assign faqs = api.query("faq").orderByAsc("priority").findAll()>
 <section id="faq" class="faq section">
 	<div class="container">
@@ -129,44 +169,4 @@
 			<a class="btn btn-lg btn-theme scrollto" href="#contact">Get in touch <i class="fa fa-arrow-alt-circle-down"></i></a>
 		</div>
 	</div><!--//container-->
-</section>
-
-<section id="privacy" class="story section has-pattern">
-	<div class="container">
-		<div class="row">
-			<#assign privacy = api.query("privacy").findOne()>
-			<div class="content col-md-12 text-center">
-				<div class="policy">
-					<h2 class="title">${privacy.getText("title")}</h2>
-					${privacy.getRichText("description").html}
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<#assign testimonials = api.query("testimonial").findRandom(12)>
-<section id="testimonials" class="testimonials section">
-	<div class="container">
-		<div class="row">
-			<h2 class="title text-center">What do people think?</h2>
-			<#list testimonials as testimonial>
-				<div class="item col-md-4 col-sm-4">
-					<div class="quote-box">
-						<i class="fa fa-quote-left"></i>
-						<blockquote class="quote">
-							${testimonial.getText("testimonial")}
-						</blockquote>
-					</div>
-					<div class="people row">
-						<img class="img-circle user-pic col-md-5 col-sm-5 col-xs-12 col-md-offset-1 col-sm-offset-1" src="${testimonial.getImage("picture").url}"/>
-						<p class="details pull-left">
-							<span class="name">${testimonial.getText("name")}</span>
-							<span class="title">${testimonial.getText("country")}</span>
-						</p>
-					</div>
-				</div>
-			</#list>
-		</div>
-	</div>
 </section>
