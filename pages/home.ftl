@@ -54,6 +54,11 @@
 				</div>
 			</#list>
 		</div>
+		<div>
+			<div class="col-md-12 embed-responsive embed-responsive-16by9">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/BZ0ssvwKo8g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -101,7 +106,7 @@
 <#assign faqs = api.query("faq").orderByAsc("priority").findAll()>
 <section id="faq" class="faq section">
 	<div class="container">
-		<h2 class="title">Frequently asked questions</h2>
+		<h2 class="title text-center">Frequently asked questions</h2>
 		<div class="row">
 			<#list faqs?chunk((faqs?size / 2)?ceiling) as faqList>
 				<div class="faq-col col-md-6 col-12">
@@ -130,9 +135,11 @@
 	<div class="container">
 		<div class="row">
 			<#assign privacy = api.query("privacy").findOne()>
-			<div class="content text-center">
-				<h2 class="title">${privacy.getText("title")}</h2>
-				${privacy.getRichText("description").html}
+			<div class="content col-md-12 text-center">
+				<div class="policy">
+					<h2 class="title">${privacy.getText("title")}</h2>
+					${privacy.getRichText("description").html}
+				</div>
 			</div>
 		</div>
 	</div>

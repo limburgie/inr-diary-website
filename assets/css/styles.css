@@ -420,11 +420,10 @@ select {
 
 /* ======= Promo Section ======= */
 #privacy {
-  margin-top: 80px;
-  padding: 50px;
+  padding: 80px 0;
 }
 
-#privacy .content {
+#privacy .policy {
   max-width: 400px;
   margin: 50px auto;
 }
@@ -822,6 +821,10 @@ select {
 }
 .features .btn-link:hover {
   color: #3fa07a;
+}
+
+.embed-responsive {
+  margin-top: 25px;
 }
 /* ======= How Section ======= */
 .how {
@@ -1488,10 +1491,6 @@ select {
 }
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
-  #privacy {
-    padding: 20px !important;
-  }
-
   .navbar-toggle {
     margin-right: 0;
   }
@@ -1576,6 +1575,19 @@ select {
   }
   .promo .overview .btn-group li {
     display: block;
+  }
+
+  .features .icon .fa {
+    font-size: 30px;
+  }
+
+  .features .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .features .content {
+    padding-top: 10px;
   }
 }
 /* Small devices (tablets, 768px and up) */
