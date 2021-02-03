@@ -123,5 +123,27 @@ ${inserts.body}
 <script type="text/javascript" src="/assets/js/animations.js"></script>
 <!--<![endif]-->
 
+<script type="text/javascript">
+	$(function() {
+		if (location.hash.startsWith("#faq")) {
+			$("#collapse-" + location.hash.substring(1)).collapse("show");
+		}
+
+		$(".question a").click(function() {
+			var id = $(this).attr("data-faq-id");
+			var node = $("#" + id);
+
+			if (node.length) {
+				node.attr("id", "");
+			}
+
+			window.location.hash = id;
+
+			if (node.length) {
+				node.attr("id", id);
+			}
+		});
+	});
+</script>
 </body>
 </html>

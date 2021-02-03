@@ -154,11 +154,11 @@
 						<div class="item">
 							<h3 id="${faq.uid}" class="faq-anchor">Testje</h3>
 							<h3 class="question">
-								<a href="#${faq.uid}">
+								<a data-toggle="collapse" data-target="#collapse-${faq.uid}" data-faq-id="${faq.uid}">
 									<i class="fa fa-question-circle"/> ${faq.getText("question")}
 								</a>
 							</h3>
-							<div class="answer">${faq.getRichText("answer").html}</div>
+							<div class="answer collapse" id="collapse-${faq.uid}">${faq.getRichText("answer").html}</div>
 						</div>
 					</#list>
 				</div>
