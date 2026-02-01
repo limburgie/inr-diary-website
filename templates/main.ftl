@@ -26,13 +26,13 @@
 	<meta name="description" content="INR Diary">
 	<meta name="author" content="Peter Mesotten">
 	<link rel="shortcut icon" type="image/png" href="../assets/images/logo/icon-transparent-50.png">
-	<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel='stylesheet' type='text/css'>
-	<link href="//fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel='stylesheet' type='text/css'>
+	<link href="//fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Khand:wght@300;400;500;600;700&display=swap" rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/assets/plugins/font-awesome/css/fontawesome-all.min.css">
 	<link rel="stylesheet" href="/assets/plugins/flexslider/flexslider.css">
 	<link rel="stylesheet" href="/assets/plugins/animate-css/animate.min.css">
 	<link id="theme-style" rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="stylesheet" href="/assets/css/custom.css">
 	<!--[if lt IE 9]>
 	<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -45,7 +45,7 @@
 	<div class="container">
 		<h1 class="logo pull-left">
 			<a class="scrollto" href="#promo">
-				<img id="logo-image" class="logo-image" src="../assets/images/logo/inr-diary-drop-100.png" alt="Logo">
+				<img id="logo-image" class="logo-image" src="../assets/images/logo/icon-rounded-512.png" alt="Logo">
 				<span class="logo-title">INR Diary</span>
 			</a>
 		</h1>
@@ -81,9 +81,6 @@ ${inserts.body}
 			<h2 class="title">Contact us</h2>
 			<div class="intro col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
 				<p>We’d love to hear from you. Please let us know if you have any questions or feedback.</p>
-				<ul class="list-unstyled contact-details">
-					<li><i class="fa fa-envelope"></i><a href="mailto:peter@web-factor.be" target="_blank">peter@web-factor.be</a></li>
-				</ul>
 			</div>
 		</div>
 		<div class="row text-center">
@@ -91,7 +88,7 @@ ${inserts.body}
 				<form class="form" action="mailto:peter@web-factor.be" target="_top">
 					<div class="form-group message">
 						<label class="sr-only" for="message">Message</label>
-						<textarea id="message" name="body" class="form-control" rows="6" placeholder="Message:"></textarea>
+						<textarea id="message" name="body" class="form-control" rows="6" placeholder="Your question/remark goes here"></textarea>
 					</div>
 					<input type="hidden" name="subject" value="INR Diary feedback"/>
 					<input type="hidden" name="su" value="INR Diary feedback"/>

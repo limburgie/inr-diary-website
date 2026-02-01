@@ -82,17 +82,11 @@
 							<p class="name">${member.getText("name")}</p>
 							<p class="title">${member.getText("role")}</p>
 							<ul class="connect list-inline">
-								<#if member.getText("twitter_handle")?has_content>
-									<li><a href="https://www.twitter.com/${member.getText("twitter_handle")}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+								<#if member.getText("email_address")?has_content>
+									<li class="row-end"><a href="mailto:${member.getText("email_address")}" target="_blank"><i class="fa fa-envelope"></i></a></li>
 								</#if>
 								<#if member.getText("linkedin_account")?has_content>
 									<li><a href="https://be.linkedin.com/in/${member.getText("linkedin_account")}" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-								</#if>
-								<#if member.getText("github_account")?has_content>
-									<li><a href="https://github.com/${member.getText("github_account")}" target="_blank"><i class="fab fa-github"></i></a></li>
-								</#if>
-								<#if member.getText("email_address")?has_content>
-									<li class="row-end"><a href="mailto:${member.getText("email_address")}" target="_blank"><i class="fa fa-envelope"></i></a></li>
 								</#if>
 							</ul>
 						</div>
@@ -107,7 +101,7 @@
 <section id="testimonials" class="testimonials section">
 	<div class="container">
 		<div class="row">
-			<h2 class="title text-center">What do people think?</h2>
+			<h2 class="title text-center">What do our users think?</h2>
 			<#list testimonials as testimonial>
 				<div class="item col-md-4 col-sm-4">
 					<div class="quote-box">
