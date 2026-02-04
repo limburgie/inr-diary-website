@@ -149,7 +149,8 @@
 							<h3 id="${faq.uid}" class="faq-anchor">Testje</h3>
 							<h3 class="question">
 								<a data-toggle="collapse" data-target="#collapse-${faq.uid}" data-faq-id="${faq.uid}">
-									<i class="fa fa-question-circle"/> ${faq.getText("question")}
+									<i class="fa fa-question-circle"/>
+									<div>${faq.getText("question")}</div>
 								</a>
 							</h3>
 							<div class="answer collapse" id="collapse-${faq.uid}">${faq.getRichText("answer").html}</div>

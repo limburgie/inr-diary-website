@@ -375,7 +375,7 @@ select {
   background: transparent;
 }
 .flexslider .flex-control-nav {
-  bottom: -35px;
+  bottom: -50px;
 }
 .flexslider .flex-control-paging li a {
   background: #333;
@@ -392,13 +392,13 @@ select {
 
 @media (max-width: 767px) {
   .screenshot {
-    padding: 100px;
+    padding: 50px;
   }
 }
 
 @media (min-width: 768px) {
   .screenshot {
-    padding: 200px;
+    padding: 100px;
   }
 }
 
@@ -798,7 +798,7 @@ select {
 }
 .features .content .title {
   color: #89304B;
-  font-size: 18px;
+  font-size: 22px;
   margin-top: 0;
 }
 .features .content p {
@@ -902,6 +902,9 @@ select {
   margin: 0;
   font-size: 18px;
   cursor: pointer;
+}
+.faq .item .question a {
+  display: flex;
 }
 .faq .item .question .fa {
   margin-right: 10px;
@@ -1250,7 +1253,7 @@ select {
 .contact .contact-form .btn-theme {
   background-color: #89304B;
   margin-top: 15px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .contact .social-icons {
   display: inline-block;
