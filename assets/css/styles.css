@@ -470,15 +470,20 @@ select {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  display: block;
+  display: inline-block;
   width: 160px;
   height: 47px;
   text-indent: -9999px;
   margin: 0 15px 30px 15px;
-  opacity: 0.7;
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .promo .overview .btn-group li a {
+    margin: 0 5px 20px 5px;
+  }
 }
 .promo .overview .btn-group li a:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .promo .overview .note {
@@ -812,6 +817,39 @@ select {
 }
 .features .btn-link:hover {
   color: #89304B;
+}
+
+@media (max-width: 767px) {
+  .features .row {
+    margin: 0 20px;
+  }
+
+  .features .item {
+    display: flex;
+  }
+
+  .features .item > * {
+    text-align: left;
+    margin: 0;
+  }
+
+  .features .item .icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-top: 24px;
+  }
+
+  .features .item .fa {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin: 12px 0 0 -2px;
+  }
+
+  .features .content {
+    padding: 24px !important;
+  }
 }
 
 .embed-responsive {
@@ -1221,7 +1259,8 @@ select {
 }
 /* ======= Contact Section ======= */
 .contact {
-  background-color: #f5f5f5;
+  background-color: #89304B;
+  color: #fff;
   padding: 80px 0;
 }
 .contact .title {
@@ -1250,9 +1289,11 @@ select {
   padding: 10px 15px;
   font-size: 16px;
 }
+.contact .contact-form label {
+  font-weight: normal;
+}
 .contact .contact-form .btn-theme {
-  background-color: #89304B;
-  margin-top: 15px;
+  background-color: #000;
   font-size: 18px;
 }
 .contact .social-icons {
@@ -1262,6 +1303,16 @@ select {
 }
 .contact p {
   margin-bottom: 24px;
+}
+.contact .submit-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .contact .container {
+    margin: 0 20px;
+  }
 }
 /* ======= 404 page ======= */
 .section-404 {
@@ -1568,17 +1619,9 @@ select {
     -o-background-size: 30px auto;
     background-size: 30px auto;
   }
-  .promo .overview .btn-group li {
-    display: block;
-  }
 
   .features .icon .fa {
     font-size: 30px;
-  }
-
-  .features .icon {
-    width: 60px;
-    height: 60px;
   }
 
   .features .content {
@@ -1661,4 +1704,32 @@ select {
   .promo .overview {
     margin-top: 160px;
   }
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.grecaptcha-disclaimer {
+  opacity: 0.3;
+  text-align: right;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.grecaptcha-disclaimer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.alert-success {
+  border: none;
+  background-color: #F9CCBE;
+  color: #000;
+}
+
+.alert-danger {
+  border: none;
+  background-color: #DD2900;
+  color: #fff;
 }

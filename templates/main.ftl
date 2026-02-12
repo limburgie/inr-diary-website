@@ -44,14 +44,14 @@
 	<div class="container">
 		<h1 class="logo pull-left">
 			<a class="scrollto" href="#promo">
-				<img id="logo-image" class="logo-image" src="../assets/images/logo/icon-rounded-512.png" alt="Logo">
-				<span class="logo-title">INR Diary</span>
+				<img id="logo-image" class="logo-image" src="../assets/images/logo/icon-rounded-512.png" alt="${i18n['inr-diary']}">
+				<span class="logo-title">${i18n['inr-diary']}</span>
 			</a>
 		</h1>
 		<nav id="main-nav" class="main-nav navbar-right" role="navigation">
 			<div class="navbar-header">
 				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
+					<span class="sr-only">${i18n['toggle-navigation']}</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -59,13 +59,13 @@
 			</div>
 			<div class="navbar-collapse collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li class="active nav-item sr-only"><a class="scrollto" href="/#promo">Home</a></li>
-					<li class="nav-item"><a class="scrollto" href="/#features">Features</a></li>
-					<li class="nav-item"><a class="scrollto" href="/#story">Story</a></li>
-					<li class="nav-item"><a class="scrollto" href="/#testimonials">Testimonials</a></li>
-					<li class="nav-item"><a class="scrollto" href="/#privacy">Privacy</a></li>
-					<li class="nav-item"><a class="scrollto" href="/#faq">FAQ</a></li>
-					<li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
+					<li class="active nav-item sr-only"><a class="scrollto" href="/#promo">${i18n['home']}</a></li>
+					<li class="nav-item"><a class="scrollto" href="/#features">${i18n['features']}</a></li>
+					<li class="nav-item"><a class="scrollto" href="/#story">${i18n['story']}</a></li>
+					<li class="nav-item"><a class="scrollto" href="/#testimonials">${i18n['testimonials']}</a></li>
+					<li class="nav-item"><a class="scrollto" href="/#privacy">${i18n['privacy']}</a></li>
+					<li class="nav-item"><a class="scrollto" href="/#faq">${i18n['faq']}</a></li>
+					<li class="nav-item last"><a class="scrollto" href="/#contact">${i18n['contact']}</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -74,33 +74,9 @@
 
 ${inserts.body}
 
-<section id="contact" class="contact section has-pattern">
-	<div class="container">
-		<div class="row text-center">
-			<h2 class="title">Contact us</h2>
-			<div class="intro col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
-				<p>We’d love to hear from you. Please let us know if you have any questions or feedback.</p>
-			</div>
-		</div>
-		<div class="row text-center">
-			<div class="contact-form col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
-				<form class="form" action="mailto:peter@web-factor.be" target="_top">
-					<div class="form-group message">
-						<label class="sr-only" for="message">Message</label>
-						<textarea id="message" name="body" class="form-control" rows="6" placeholder="Your question/remark goes here"></textarea>
-					</div>
-					<input type="hidden" name="subject" value="INR Diary feedback"/>
-					<input type="hidden" name="su" value="INR Diary feedback"/>
-					<button type="submit" class="btn btn-lg btn-theme">Send Message</button>
-				</form>
-			</div>
-		</div>
-	</div>
-</section>
-
 <footer class="footer">
 	<div class="container">
-		<small class="copyright pull-left">&copy; ${.now?string('yyyy')} <a href="https://www.web-factor.be" target="_blank">Web Factor</a></small>
+		<small class="copyright pull-left">&copy; ${.now?string('yyyy')} <a href="https://www.web-factor.be/en" target="_blank">Web Factor</a></small>
 	</div>
 </footer>
 
@@ -114,7 +90,9 @@ ${inserts.body}
 <script type="text/javascript" src="/assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
 <script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="/assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+<script src="//www.google.com/recaptcha/api.js?render=6LeUn2spAAAAAHkSx432ENGSaBE3Lpq1O-YMDuna"></script>
 <script type="text/javascript" src="/assets/js/main.js"></script>
+<script type="text/javascript" src="/assets/js/contact.js"></script>
 <!--[if !IE]>-->
 <script type="text/javascript" src="/assets/js/animations.js"></script>
 <!--<![endif]-->

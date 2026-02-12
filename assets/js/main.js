@@ -21,6 +21,8 @@ jQuery(document).ready(function($) {
     /* ======= Flexslider ======= */
     $('.flexslider').flexslider({
         animation: "fade",
+        slideshowSpeed: 2000,
+        animationSpeed: 500,
         touch: true,
         directionNav: false
     });

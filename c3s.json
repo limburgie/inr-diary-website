@@ -7,9 +7,30 @@
 	},
 
 	"locationSettings": {
-		"locale": "nl_BE",
+		"locales": ["en_US","nl_BE"],
 		"timeZone": "Europe/Brussels"
 	},
+
+	"mailSettings": {
+		"host": "mail.postale.io",
+		"port": 587,
+		"username": "info@inrdiary.com",
+		"password": "Wa8t4bhaBK@W1qJoZ9!l"
+	},
+
+	"forms": [
+		{
+			"name": "contact",
+			"visitorEmail": {
+				"subject": "thank-you-for-your-message",
+				"contents": "mail/contact-visitor.ftl"
+			},
+			"managerEmail": {
+				"subject": "new-message-for-inr-diary",
+				"contents": "mail/contact-owner.ftl"
+			}
+		}
+	],
 
 	"templates": [
 		{
@@ -33,14 +54,6 @@
 			"template": "main",
 			"inserts": {
 				"body": "pages/home.ftl"
-			}
-		},
-		{
-			"friendlyUrl": "privacy",
-			"name": "Privacy",
-			"template": "main",
-			"inserts": {
-				"body": "pages/privacy.ftl"
 			}
 		}
 	]
