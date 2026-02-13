@@ -23,7 +23,7 @@
                     <div class="alert alert-danger hidden">${i18n['something-went-wrong-please-try-again']}</div>
                     <div class="submit-row">
                         <button type="submit" class="btn btn-lg btn-theme">
-                            <span class="spinner-border" role="status"></span> ${i18n['send']}
+                            <span class="spinner-border" role="status"></span> <span class="sending-off">${i18n['send']}</span> <span class="sending-on hidden">${i18n['sending']}</span>
                         </button>
                         <div class="grecaptcha-disclaimer">
                             ${i18n["this-form-is-protected-by-recaptcha"]}<br/>

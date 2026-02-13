@@ -1,8 +1,7 @@
 <p>Hello,</p>
 
 <p>
-    Thank you for leaving a message on the INR Diary website.<br/>
-    We have received the following message from you:
+    Thank you for leaving a message on the INR Diary website. We have received the following message from you:
 </p>
 
 <p>
@@ -15,7 +14,7 @@
 </p>
 
 <p>
-    Have a great day and take care,
+    Have a great day and take care,<br/><br/>
 </p>
 
 <div id="signature" style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; line-height: 22px; font-size: 14px">
@@ -33,7 +32,7 @@
     <table id="sgn-light" style="width: 400px; color: rgb(0, 0, 0); border-radius: 4px 4px 0px 0px; border-collapse: collapse; margin-top: 10px; background-color: rgb(249, 203, 189);">
         <tbody><tr>
             <td style="padding: 16px;">
-                <a id="sgn-logo-url" style="display: block" target="_blank" href="https://www.inrdiary.com">
+                <a id="sgn-logo-url" style="display: block" target="_blank" href="https://www.inrdiary.com/en">
                     <img id="sgn-logo-image" style="height: 40px; vertical-align: middle" height="40" src="https://files.web-factor.be/pawmygod/logo-inr-diary.png" alt="INR Diary">
                 </a>
             </td>
@@ -46,13 +45,13 @@
     <table id="sgn-dark" style="width: 400px; color: rgb(255, 255, 255); border-radius: 0px 0px 4px 4px; border-collapse: collapse; background-color: rgb(137, 48, 75);">
         <tbody><tr>
             <td style="padding: 12px 16px; font-size: 11px">
-                <span id="sgn-tagline">Your reliable oral anticoagulation companion.</span>
+                <span id="sgn-tagline">Your reliable anticoagulation companion.</span>
             </td>
             <td id="sgn-icons" style="padding: 12px 16px; text-align: right">
-                <a href="https://apps.apple.com/us/app/inr-diary/id1540505030" target="_blank" style="margin-left: 8px;">
+                <a href="https://apps.apple.com/en/app/inr-diary/id1540505030" target="_blank" style="margin-left: 8px;">
                     <img src="https://files.web-factor.be/pawmygod/logo-appstore.png" alt="App Store" width="20" height="20" style="height: 20px; width: 20px; border-radius: 10px; vertical-align: middle;">
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=be.webfactor.inrdiaryplus" target="_blank" style="margin-left: 8px;">
+                <a href="https://play.google.com/store/apps/details?id=be.webfactor.inrdiaryplus&hl=en" target="_blank" style="margin-left: 8px;">
                     <img src="https://files.web-factor.be/pawmygod/logo-playstore.png" alt="Play Store" width="20" height="20" style="height: 20px; width: 20px; border-radius: 10px; vertical-align: middle;">
                 </a>
             </td>

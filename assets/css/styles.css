@@ -1713,7 +1713,7 @@ select {
 .grecaptcha-disclaimer {
   opacity: 0.3;
   text-align: right;
-  font-size: 12px;
+  font-size: 10px;
   margin-top: 4px;
 }
 
@@ -1724,12 +1724,20 @@ select {
 
 .alert-success {
   border: none;
-  background-color: #F9CCBE;
+  background-color: #BBE7BE;
   color: #000;
 }
 
 .alert-danger {
   border: none;
-  background-color: #DD2900;
-  color: #fff;
+  background-color: #F9CCBE;
+  color: #000;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+  max-height: 500px;
+}
+
+.dropdown-menu {
+  min-width: 0px;
 }

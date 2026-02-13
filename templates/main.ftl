@@ -68,9 +68,22 @@
 					<li class="nav-item"><a class="scrollto" href="/#features">${i18n['features']}</a></li>
 					<li class="nav-item"><a class="scrollto" href="/#story">${i18n['story']}</a></li>
 					<li class="nav-item"><a class="scrollto" href="/#testimonials">${i18n['testimonials']}</a></li>
-					<li class="nav-item"><a class="scrollto" href="/#privacy">${i18n['privacy']}</a></li>
 					<li class="nav-item"><a class="scrollto" href="/#faq">${i18n['faq']}</a></li>
-					<li class="nav-item last"><a class="scrollto" href="/#contact">${i18n['contact']}</a></li>
+					<li class="nav-item"><a class="scrollto" href="/#contact">${i18n['contact']}</a></li>
+					<li class="nav-item dropdown last">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-globe"></i> ${request.locale.language?upper_case}<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<#list site.locales as locale>
+								<#if locale != request.locale>
+									<li>
+										<a class="<#if locale == request.locale>active</#if>" href="${uri.ofCurrent(locale.language)}">
+											${locale.language?upper_case}
+										</a>
+									</li>
+								</#if>
+							</#list>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</nav>

@@ -7,10 +7,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const submitButton = document.querySelector("form button");
     const captchaInput = document.getElementById("captcha");
     const captchaDisclaimer = document.querySelector(".grecaptcha-disclaimer");
+    const sendingOffLabel = document.querySelector(".sending-off");
+    const sendingOnLabel = document.querySelector(".sending-on");
 
     form.addEventListener("submit", function(event) {
         event.preventDefault();
-        showButtonLoading();
+        showSending();
 
         grecaptcha.ready(function() {
             grecaptcha.execute("6LeUn2spAAAAAHkSx432ENGSaBE3Lpq1O-YMDuna", {action: "submit"}).then(function(token) {
@@ -31,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }).catch(error => {
                     showError();
-                    stopButtonLoading();
+                    stopSending();
                 })
             });
         })
@@ -50,13 +52,17 @@ document.addEventListener("DOMContentLoaded", function() {
         captchaDisclaimer.classList.add("hidden");
     }
 
-    function showButtonLoading() {
+    function showSending() {
         submitButton.setAttribute("disabled", "disabled");
+        sendingOffLabel.classList.add("hidden");
+        sendingOnLabel.classList.remove("hidden");
         errorMsg.classList.add("hidden");
         successMsg.classList.add("hidden");
     }
 
-    function stopButtonLoading() {
+    function stopSending() {
+        sendingOffLabel.classList.remove("hidden");
+        sendingOnLabel.classList.add("hidden");
         submitButton.removeAttribute("disabled");
     }
 });
