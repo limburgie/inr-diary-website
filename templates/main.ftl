@@ -70,7 +70,7 @@
 					<li class="nav-item"><a class="scrollto" href="/#testimonials">${i18n['testimonials']}</a></li>
 					<li class="nav-item"><a class="scrollto" href="/#faq">${i18n['faq']}</a></li>
 					<li class="nav-item"><a class="scrollto" href="/#contact">${i18n['contact']}</a></li>
-					<li class="nav-item dropdown last">
+					<li class="nav-item dropdown language-picker last">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-globe"></i> ${request.locale.language?upper_case}<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<#list site.locales as locale>

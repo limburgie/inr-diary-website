@@ -1743,6 +1743,7 @@ select {
   max-height: 500px;
 }
 
-.dropdown-menu {
-  min-width: 0px;
+.language-picker .dropdown-menu {
+  margin-left: 20px;
+  min-width: 0;
 }
