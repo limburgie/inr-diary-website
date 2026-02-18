@@ -12,7 +12,7 @@
                         </blockquote>
                     </div>
                     <div class="people row">
-                        <img class="img-circle user-pic col-md-5 col-sm-5 col-xs-12 col-md-offset-1 col-sm-offset-1" src="/assets/images/avatar.jpg"/>
+                        <img class="img-circle user-pic col-md-5 col-sm-5 col-xs-12 col-md-offset-1 col-sm-offset-1" src="/assets/img/avatar.jpg"/>
                         <p class="details pull-left">
                             <span class="name">${testimonial.getText("name")}</span>
                             <span class="title">${testimonial.getText("country")}</span>

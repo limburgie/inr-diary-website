@@ -149,7 +149,7 @@ select {
   padding-top: 90px;
 }
 .has-pattern {
-  background-image: url('../images/patterns/pattern-1.png');
+  background-image: url('../img/patterns/pattern-1.png');
   background-repeat: repeat;
   background-position: left top;
 }
@@ -446,7 +446,7 @@ select {
   font-size: 20px;
   font-weight: 300;
   padding-left: 30px;
-  background: url('../images/bullet.png') no-repeat left center;
+  background: url('../img/bullet.png') no-repeat left center;
 }
 .promo .overview .download-area {
   display: inline-block;
@@ -498,7 +498,7 @@ select {
   left: 60px;
   bottom: 15px;
   display: inline-block;
-  background: url('../images/arrows/up-arrow-left.png') no-repeat left top;
+  background: url('../img/arrows/up-arrow-left.png') no-repeat left top;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -514,7 +514,7 @@ select {
   right: 60px;
   bottom: 15px;
   display: inline-block;
-  background: url('../images/arrows/up-arrow-right.png') no-repeat right top;
+  background: url('../img/arrows/up-arrow-right.png') no-repeat right top;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -536,10 +536,10 @@ select {
   background-position: center top;
 }
 .promo .iphone.iphone-black .iphone-holder {
-  background-image: url('../images/iphone/iphone-black.png');
+  background-image: url('../img/iphone/iphone-black.png');
 }
 .promo .iphone.iphone-white .iphone-holder {
-  background-image: url('../images/iphone/iphone-white.png');
+  background-image: url('../img/iphone/iphone-white.png');
 }
 .promo .iphone .iphone-holder-inner {
   position: absolute;
@@ -556,7 +556,7 @@ select {
   display: block;
   width: 500px;
   height: 500px;
-  background: url('../images/glow.png') no-repeat center top;
+  background: url('../img/glow.png') no-repeat center top;
   right: 0;
   top: 0;
   position: absolute;
@@ -568,7 +568,7 @@ select {
   position: relative;
   width: 320px;
   height: 750px;
-  background-image: url('../images/android/android-black.png');
+  background-image: url('../img/android/android-black.png');
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -587,7 +587,7 @@ select {
   display: block;
   width: 500px;
   height: 500px;
-  background: url('../images/glow.png') no-repeat center top;
+  background: url('../img/glow.png') no-repeat center top;
   right: 0;
   top: 0;
   position: absolute;
@@ -603,10 +603,10 @@ select {
   background-position: center top;
 }
 .promo .ipad.ipad-black .ipad-holder {
-  background-image: url('../images/ipad/ipad-black.png');
+  background-image: url('../img/ipad/ipad-black.png');
 }
 .promo .ipad.ipad-white .ipad-holder {
-  background-image: url('../images/ipad/ipad-white.png');
+  background-image: url('../img/ipad/ipad-white.png');
 }
 .promo .ipad .ipad-holder-inner {
   position: absolute;
@@ -623,7 +623,7 @@ select {
   display: block;
   width: 500px;
   height: 500px;
-  background: url('../images/glow.png') no-repeat left top;
+  background: url('../img/glow.png') no-repeat left top;
   right: 0;
   top: 0;
   position: absolute;
@@ -686,10 +686,10 @@ select {
   background-position: center top;
 }
 .promo-landscape .iphone.iphone-black .iphone-holder {
-  background-image: url('../images/iphone/iphone-black-landscape.png');
+  background-image: url('../img/iphone/iphone-black-landscape.png');
 }
 .promo-landscape .iphone.iphone-white .iphone-holder {
-  background-image: url('../images/iphone/iphone-white.png');
+  background-image: url('../img/iphone/iphone-white.png');
 }
 .promo-landscape .iphone .iphone-holder-inner {
   position: absolute;
@@ -706,7 +706,7 @@ select {
   display: block;
   width: 100%;
   height: 500px;
-  background: url('../images/glow.png') no-repeat center top;
+  background: url('../img/glow.png') no-repeat center top;
   top: -60px;
   left: 0;
   position: absolute;
@@ -719,7 +719,7 @@ select {
   position: relative;
   width: 570px;
   height: 290px;
-  background-image: url('../images/android/android-black-landscape.png');
+  background-image: url('../img/android/android-black-landscape.png');
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -738,7 +738,7 @@ select {
   display: block;
   width: 100%;
   height: 500px;
-  background: url('../images/glow.png') no-repeat center top;
+  background: url('../img/glow.png') no-repeat center top;
   top: -60px;
   left: 0;
   position: absolute;
@@ -883,7 +883,7 @@ select {
   left: 60px;
   top: 20px;
   display: inline-block;
-  background: url('../images/arrows/down-arrow-left.png') no-repeat left top;
+  background: url('../img/arrows/down-arrow-left.png') no-repeat left top;
   width: 30px;
   height: 42px;
 }
@@ -892,7 +892,7 @@ select {
   right: 60px;
   top: 20px;
   display: inline-block;
-  background: url('../images/arrows/down-arrow-right.png') no-repeat right top;
+  background: url('../img/arrows/down-arrow-right.png') no-repeat right top;
   width: 30px;
   height: 42px;
 }

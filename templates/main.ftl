@@ -25,12 +25,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="${i18n['inr-diary']}">
 	<meta name="author" content="Peter Mesotten">
-	<link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
-	<link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
 	<meta name="apple-mobile-web-app-title" content="${i18n['inr-diary']}" />
-	<link rel="manifest" href="/assets/images/favicon/site.webmanifest" />
+	<link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
 	<link href="//fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Khand:wght@300;400;500;600;700&display=swap" rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/assets/plugins/font-awesome/css/fontawesome-all.min.css">
@@ -49,7 +49,7 @@
 	<div class="container">
 		<h1 class="logo pull-left">
 			<a class="scrollto" href="#promo">
-				<img id="logo-image" class="logo-image" src="../assets/images/logo/icon-rounded-512.png" alt="${i18n['inr-diary']}">
+				<img id="logo-image" class="logo-image" src="../assets/img/logo/icon-rounded-512.png" alt="${i18n['inr-diary']}">
 				<span class="logo-title">${i18n['inr-diary']}</span>
 			</a>
 		</h1>
