@@ -1,13 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 8]>
-<html lang="en" class="ie8">
-<![endif]-->
-<!--[if IE 9]>
-<html lang="en" class="ie9">
-<![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
+<html lang="${request.locale.language}">
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164602052-3"></script>
@@ -67,7 +59,8 @@
 			<div class="navbar-collapse collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav">
 					<li class="active nav-item sr-only"><a class="scrollto" href="/#promo">${i18n['home']}</a></li>
-					<li class="nav-item"><a class="scrollto" href="/#features">${i18n['features']}</a></li>
+					<li class="nav-item"><a class="scrollto" href="/#promo">${i18n['download']}</a></li>
+<#--					<li class="nav-item"><a class="scrollto" href="/#features">${i18n['features']}</a></li>-->
 					<li class="nav-item"><a class="scrollto" href="/#story">${i18n['story']}</a></li>
 					<li class="nav-item"><a class="scrollto" href="/#testimonials">${i18n['testimonials']}</a></li>
 					<li class="nav-item"><a class="scrollto" href="/#faq">${i18n['faq']}</a></li>
@@ -96,7 +89,12 @@ ${inserts.body}
 
 <footer class="footer">
 	<div class="container">
-		<small class="copyright pull-left">&copy; ${.now?string('yyyy')} <a href="https://www.web-factor.be/en" target="_blank">Web Factor</a></small>
+		<small class="copyright pull-left" style="margin-top: 6px;">&copy; ${.now?string('yyyy')} <a href="https://www.web-factor.be/en" target="_blank">Web Factor</a></small>
+		<div class="pull-right">
+			<a href="https://www.paypal.com/donate/?hosted_button_id=HXTQ99AMFBST2" target="_blank">
+				<img src="/assets/img/paypal-${request.locale.language}.png" alt="${i18n['donate-with-paypal']}" height="36"/>
+			</a>
+		</div>
 	</div>
 </footer>
 
